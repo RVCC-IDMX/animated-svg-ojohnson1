@@ -1,0 +1,47 @@
+body {
+  text-align: center;
+  margin-top: 50px;
+}
+
+#ball {
+  animation: throw 1s infinite;
+}
+
+@keyframes throw {
+  from {
+    transform: rotateZ(0deg);
+  }
+
+  to {
+    transform: rotateZ(30deg);
+  }
+}
+
+#man-arms {
+  animation: handsup 0.5s infinite;
+}
+@keyframes handsup {
+  0% {
+    transform: translateY(-1px);
+  }
+
+  100% {
+    transform: translateY(4px);
+  }
+}
+
+#girl-head {
+  animation: lookup 1.5s infinite ease-in-out alternate;
+  transform-origin: bottoms;
+  transform-box: fill-box;
+}
+
+@keyframes lookup {
+  from {
+    transform: rotateZ(0deg);
+  }
+
+  to {
+    transform: rotateZ(-0.5deg);
+  }
+}
